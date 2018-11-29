@@ -19,6 +19,16 @@
     <!-- Firebase -->
     <script src="https://www.gstatic.com/firebasejs/5.5.9/firebase.js"></script>
 
+    <!-- jQuery -->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+  <!-- moment.js & jquery.mask-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
     <title>Train Tracker</title>
 </head>
 
@@ -54,12 +64,36 @@
     <hr />
 </div>
 
-
-
-
-
-
 <!-- Add Train Submit Form -->
+
+<div class="panel panel-default">
+    <div class="panel-heading panel-custom">
+        Add Train
+    </div>
+    <div class="panel-body">
+        <form>
+            <div class="form-group">
+                <label for="trainName">Train Name:</label>
+                <input type="text" class="form-control" id="train-name" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination:</label>
+                <input type="text" class="form-control" id="train-destination" required>
+            </div>
+            <div class="form-group">
+                <label for="startYear">First Train Time: (military time) </label>
+                <input type="text" class="form-control" placeholder="HH:MM" id="train-time" required>
+            </div>
+            <div class="form-group">
+                <label for="endYear">Frequency (minutes)</label>
+                <input type="text" class="form-control" id="time-freq">
+            </div>
+            <div class="btn-group" role="group">
+                <button type="button" id="btn-add" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span> Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
 
 
 
@@ -82,7 +116,7 @@
 
 
 
-    <!-- Optional JavaScript -->
+    <!-- JavaScript -->
     <script src="assets/javascript/main.js"></script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
