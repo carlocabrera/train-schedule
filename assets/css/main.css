@@ -1,6 +1,11 @@
 #head {
     text-align: center;
     background-color: lavender;
-    color: grey;
+    color: white;
     padding: 2%;
+    background-image: url(ptrain.jpg)
 }
+
+body {
+    background-image: url(wtrain.jpg)
+  }
