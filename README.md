@@ -5,3 +5,5 @@
 **Link:** https://carlocabrera.github.io/train-schedule/
 
 **Screenshot:**
+
+![Screenshot](assets/css/screenshot.png)
